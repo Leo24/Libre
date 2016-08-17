@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c284a9c122da36c99a8b6597bdce7aa6",
-    "content-hash": "8b1485987e7c5949da82435d403e52e8",
+    "hash": "b7b68dcced9de02bcf7ac38b3e2518a7",
+    "content-hash": "60d11ec5acd14e146b243fe118e4d720",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -518,6 +518,133 @@
                 "storage"
             ],
             "time": "2016-08-10 08:55:11"
+        },
+        {
+            "name": "libre-ehr/core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LibreEHR/core.git",
+                "reference": "8f65d52ac3f3b2e1ce167b3d87a923d0ff65b22c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LibreEHR/core/zipball/8f65d52ac3f3b2e1ce167b3d87a923d0ff65b22c",
+                "reference": "8f65d52ac3f3b2e1ce167b3d87a923d0ff65b22c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LibreEHR\\Core\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LibreEHR\\Core\\Test\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ken Chapple",
+                    "email": "ken@mi-squared.com",
+                    "homepage": "http://mi-squared.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/:vendor/:package_name",
+            "keywords": [
+                "LibreEHR",
+                "LibreEHR Core"
+            ],
+            "support": {
+                "source": "https://github.com/LibreEHR/core/tree/master",
+                "issues": "https://github.com/LibreEHR/core/issues"
+            },
+            "time": "2016-08-02 14:20:03"
+        },
+        {
+            "name": "libre-ehr/fhir",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LibreEHR/fhir.git",
+                "reference": "48f1b99dbeb4b49b1a4f46b9042157e64cfce4f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LibreEHR/fhir/zipball/48f1b99dbeb4b49b1a4f46b9042157e64cfce4f3",
+                "reference": "48f1b99dbeb4b49b1a4f46b9042157e64cfce4f3",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.1",
+                "libre-ehr/core": "dev-master",
+                "php": "~5.5|~7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LibreEHR\\FHIR\\": "src",
+                    "LibreEHR\\Core\\": "vendor/libre-ehr/core/src",
+                    "PHPFHIRGenerated\\": "src/PHPFHIRGenerated"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "LibreEHR\\FHIR\\": "tests"
+                }
+            },
+            "scripts": {
+                "test": [
+                    "phpunit"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ken Chapple",
+                    "email": "ken@mi-squared.com",
+                    "homepage": "http://mi-squared.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/:vendor/:package_name",
+            "keywords": [
+                "LibreEHR",
+                "LibreEHR on FHIR"
+            ],
+            "support": {
+                "source": "https://github.com/LibreEHR/fhir/tree/master",
+                "issues": "https://github.com/LibreEHR/fhir/issues"
+            },
+            "time": "2016-08-02 14:20:47"
         },
         {
             "name": "monolog/monolog",
@@ -3154,9 +3281,11 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "libre-ehr/fhir": 20
+    },
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=5.5.9"

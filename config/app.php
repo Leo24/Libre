@@ -147,6 +147,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        LibreEHR\FHIR\Utilities\Providers\FHIRServiceProvider::class,
 
         /*
          * Application Service Providers...
