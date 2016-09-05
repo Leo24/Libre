@@ -5,3 +5,8 @@
 Homestead.yaml
 Homestead.json
 .env
+/.idea
+/libre-ehr-laravel/_ide_helper.php
+/libre-ehr-laravel/.gitignore
+/libre-ehr-laravel/resources/views/welcome.blade.php
+.gitignore

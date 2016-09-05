@@ -9,19 +9,13 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <!--<testsuite name="Application Test Suite">-->
-            <!--<directory suffix="Test.php">./tests</directory>-->
-        <!--</testsuite>-->
-        <testsuite name="FHIR Package Test Suite">
-            <directory suffix=".php">./vendor/libre-ehr/fhir/tests</directory>
+        <testsuite name="Application Test Suite">
+            <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">./app</directory>
-            <exclude>
-                <file>./app/Http/routes.php</file>
-            </exclude>
         </whitelist>
     </filter>
     <php>
