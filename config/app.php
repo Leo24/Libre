@@ -163,6 +163,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Laravel\Passport\PassportServiceProvider::class,
+        LibreEHR\FHIR\Utilities\Providers\FHIRServiceProvider::class,
 
         /*
          * Package Service Providers...
