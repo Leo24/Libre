@@ -83,5 +83,14 @@ class RouteServiceProvider extends ServiceProvider
         ], function ($router) {
             require base_path('vendor/libre-ehr/fhir/src/Http/routes.php');
         });
+
+        Route::group([
+            'middleware' => 'api',
+            'namespace' => '\LibreEHR\FHIR\Http\Controllers',
+            'prefix' => '',
+        ], function ($router) {
+            require base_path('vendor/libre-ehr/fhir/src/Http/authRoutes.php');
+        });
+        
     }
 }
