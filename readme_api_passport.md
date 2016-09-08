@@ -3,20 +3,21 @@ I provided next steps.
 
 Firstly I have installed fresh laravel 5.3
 Added FHIR package due to instructions from https://github.com/LibreEHR/fhir/blob/master/README.md
-and swiched to auth git branch in /fhir folder
+and swiched to auth git branch in /fhir directory
 
 Then added Passport package https://laravel.com/docs/5.3/passport
+```
 composer require laravel/passport
+```
 instead migrations for now it is better to redump existing tables
 
 Db dumps for migrations, oauth_* and password_resets tables are 
-in libre-ehr-laravel/Auth_DB_dumps directory
-
+in https://github.com/Leo24/Libre/tree/laravel_5_3/Auth_DB_dumps directory
 
 then I have added custom routes for FHIR package to 
 RouteServiceProvider::mapApiRoutes method in
 libre-ehr-laravel/app/Providers/RouteServiceProvider.php
-
+```php
 Route::group([
     'middleware' => 'api',
     'namespace' => '\LibreEHR\FHIR\Http\Controllers',
@@ -32,8 +33,7 @@ Route::group([
 ], function ($router) {
     require base_path('vendor/libre-ehr/fhir/src/Http/authRoutes.php');
 });        
-
-
+```
 
 For registration new user provide request POST to url [base_url]/register
 with body form data
