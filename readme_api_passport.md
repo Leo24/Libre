@@ -1,3 +1,5 @@
+#### Instructions for deploying user authorisation package
+
 For making work user Authorisation using Passport package for Laravel 5.3
 I provided next steps.
 
@@ -34,6 +36,8 @@ Route::group([
     require base_path('vendor/libre-ehr/fhir/src/Http/authRoutes.php');
 });        
 ```
+
+#### Instructions for using Api methods
 
 For registration new user provide request POST to url [base_url]/register
 with body form data
