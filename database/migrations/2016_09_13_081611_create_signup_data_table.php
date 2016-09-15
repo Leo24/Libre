@@ -6,6 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateSignupDataTable extends Migration
 {
+    protected $connection = 'auth';
     /**
      * Run the migrations.
      *
@@ -13,7 +14,7 @@ class CreateSignupDataTable extends Migration
      */
     public function up()
     {
-        Schema::connection('auth')->create('signup_data', function (Blueprint $table) {
+        Schema::connection($this->connection)->create('signup_data', function (Blueprint $table) {
             $table->increments('id', true);
             $table->integer('user_id')->unsigned();
             $table->string('firstname');
@@ -25,7 +26,7 @@ class CreateSignupDataTable extends Migration
 
 
 
-        DB::connection('auth')->table('signup_data')
+        DB::connection($this->connection)->table('signup_data')
             ->insert(
                 [
                     'user_id'       => 15,
@@ -46,6 +47,6 @@ class CreateSignupDataTable extends Migration
      */
     public function down()
     {
-        Schema::drop('signup_data');
+        Schema::connection($this->connection)->drop('signup_data');
     }
 }
