@@ -75,4 +75,17 @@ email: <email>
 
  [![Title](https://raw.githubusercontent.com/Leo24/Libre/laravel_5_3/img/Selection_013.png)](https://github.com/Leo24/Libre/tree/laravel_5_3/img/Selection_013.png)
  
+For adding providers to user 
+request POST to url [base_url]/fhir/providers
+with x-form-urlencoded data
 
+user_id: <user_id>
+providers: <comma separated ids>
+
+for example:
+user_id: 20
+providers: 200,3,45
+
+
+ [![Title](https://raw.githubusercontent.com/Leo24/Libre/laravel_5_3/img/Selection_013.png)](https://github.com/Leo24/Libre/tree/laravel_5_3/img/Selection_015.png)
+ 
