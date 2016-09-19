@@ -48,7 +48,7 @@ password:   <sample_password>
  [![Title](https://raw.githubusercontent.com/Leo24/Libre/laravel_5_3/img/Selection_009.png)](https://github.com/Leo24/Libre/tree/laravel_5_3/img/Selection_009.png)
  
 
-For creating new token provide request POST to url [base_url]/oauth/access_token
+For creating new token provide request POST to url [base_url]/oauth/token
 with body form data
 username: <email>
 password: <user_password> that was set during registration
