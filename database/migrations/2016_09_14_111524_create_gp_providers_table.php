@@ -14,7 +14,7 @@ class CreateLibreProvidersTable extends Migration
      */
     public function up()
     {
-        Schema::connection($this->connection)->create('libre_providers', function (Blueprint $table) {
+        Schema::connection($this->connection)->create('gp_providers', function (Blueprint $table) {
             $table->increments('id', true);
             $table->string('firstname');
             $table->string('lastname');
@@ -23,7 +23,7 @@ class CreateLibreProvidersTable extends Migration
 
 
 
-        DB::connection($this->connection)->table('libre_providers')
+        DB::connection($this->connection)->table('gp_providers')
             ->insert(
                 [
                     'id'            => 1,
@@ -33,7 +33,7 @@ class CreateLibreProvidersTable extends Migration
                 ]
             );
 
-        DB::connection($this->connection)->table('libre_providers')
+        DB::connection($this->connection)->table('gp_providers')
             ->insert(
                 [
                     'id'            => 2,
@@ -51,6 +51,6 @@ class CreateLibreProvidersTable extends Migration
      */
     public function down()
     {
-        Schema::connection($this->connection)->drop('libre_providers');
+        Schema::connection($this->connection)->drop('gp_providers');
     }
 }
