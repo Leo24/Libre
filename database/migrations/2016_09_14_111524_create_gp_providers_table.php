@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLibreProvidersTable extends Migration
+class CreateGpProvidersTable extends Migration
 {
     protected $connection = 'auth';
     /**
@@ -18,6 +18,10 @@ class CreateLibreProvidersTable extends Migration
             $table->increments('id', true);
             $table->string('firstname');
             $table->string('lastname');
+            $table->string('practice');
+            $table->string('address');
+            $table->string('town');
+            $table->string('country');
             $table->string('email')->unique();
         });
 
@@ -30,6 +34,10 @@ class CreateLibreProvidersTable extends Migration
                     'firstname'     => 'John',
                     'lastname'      => 'Dow',
                     'email'         => 'example@example.com',
+                    'practice'      => 'ophthalmologist',
+                    'address'       => '1757 E. Baseline Rd',
+                    'town'          => 'Gilbert',
+                    'country'       => 'AZ',
                 ]
             );
 
@@ -40,6 +48,10 @@ class CreateLibreProvidersTable extends Migration
                     'firstname'     => 'Wolly',
                     'lastname'      => 'Morris',
                     'email'         => 'mirris@example.com',
+                    'practice'      => 'otolaryngologist',
+                    'address'       => '944 S. Mill Ave',
+                    'town'          => 'Tempe',
+                    'country'       => 'AZ',
                 ]
             );
     }
