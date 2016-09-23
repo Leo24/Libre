@@ -20,6 +20,7 @@ class CreatePharmacyTable extends Migration
             $table->string('town');
             $table->string('state');
             $table->string('country');
+            $table->string('status');
         });
 
 
@@ -27,24 +28,27 @@ class CreatePharmacyTable extends Migration
         DB::connection($this->connection)->table('pharmacy')
             ->insert(
                 [
-                    'id'            => 1,
-                    'name'          => 'realty-and-mortgage',
-                    'address'       => '3928 E. Beverly Rd',
-                    'town'          => 'Chandler',
-                    'state'         => 'AZ',
-                    'country'       => 'US'
+                    'id'               => 1,
+                    'name'             => 'realty-and-mortgage',
+                    'address'          => '3928 E. Beverly Rd',
+                    'town'             => 'Chandler',
+                    'state'            => 'AZ',
+                    'country'          => 'US',
+                    'registeredStatus' => 'notregistered',
                 ]
             );
 
         DB::connection($this->connection)->table('pharmacy')
             ->insert(
                 [
-                    'id'            => 2,
-                    'name'          => '3d-hypnosis-center',
-                    'address'       => '545 W Mariposa St',
-                    'town'          => 'Mesa',
-                    'state'         => 'NJ',
-                    'country'       => 'US'
+                    'id'               => 2,
+                    'name'             => '3d-hypnosis-center',
+                    'address'          => '545 W Mariposa St',
+                    'town'             => 'Mesa',
+                    'state'            => 'NJ',
+                    'country'          => 'US',
+                    'registeredStatus' => 'registered',
+
                 ]
             );
     }

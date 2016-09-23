@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGpProvidersTable extends Migration
+class CreateProvidersTable extends Migration
 {
     protected $connection = 'auth';
     /**
@@ -14,7 +14,7 @@ class CreateGpProvidersTable extends Migration
      */
     public function up()
     {
-        Schema::connection($this->connection)->create('gp_providers', function (Blueprint $table) {
+        Schema::connection($this->connection)->create('providers', function (Blueprint $table) {
             $table->increments('id', true);
             $table->string('firstname');
             $table->string('lastname');
@@ -27,7 +27,7 @@ class CreateGpProvidersTable extends Migration
 
 
 
-        DB::connection($this->connection)->table('gp_providers')
+        DB::connection($this->connection)->table('providers')
             ->insert(
                 [
                     'id'            => 1,
@@ -41,7 +41,7 @@ class CreateGpProvidersTable extends Migration
                 ]
             );
 
-        DB::connection($this->connection)->table('gp_providers')
+        DB::connection($this->connection)->table('providers')
             ->insert(
                 [
                     'id'            => 2,
@@ -63,6 +63,6 @@ class CreateGpProvidersTable extends Migration
      */
     public function down()
     {
-        Schema::connection($this->connection)->drop('gp_providers');
+        Schema::connection($this->connection)->drop('providers');
     }
 }
