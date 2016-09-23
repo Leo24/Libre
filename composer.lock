@@ -522,16 +522,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.6",
+            "version": "v5.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c63a7fb7066fea2bce91ace5c830c01d503abe6c"
+                "reference": "f6fbb481672f8dc4bc6882d5d654bbfa3588c8ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c63a7fb7066fea2bce91ace5c830c01d503abe6c",
-                "reference": "c63a7fb7066fea2bce91ace5c830c01d503abe6c",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f6fbb481672f8dc4bc6882d5d654bbfa3588c8ec",
+                "reference": "f6fbb481672f8dc4bc6882d5d654bbfa3588c8ec",
                 "shasum": ""
             },
             "require": {
@@ -645,20 +645,20 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-09-01 14:06:47"
+            "time": "2016-09-12 14:08:29"
         },
         {
             "name": "laravel/passport",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "55fb99f5feb3572634b6d37a8aa43bd8a7148960"
+                "reference": "6297120abe169812b7b32b4c8d55b6b3446686fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/55fb99f5feb3572634b6d37a8aa43bd8a7148960",
-                "reference": "55fb99f5feb3572634b6d37a8aa43bd8a7148960",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/6297120abe169812b7b32b4c8d55b6b3446686fe",
+                "reference": "6297120abe169812b7b32b4c8d55b6b3446686fe",
                 "shasum": ""
             },
             "require": {
@@ -674,8 +674,8 @@
                 "illuminate/support": "~5.3",
                 "league/oauth2-server": "~5.0",
                 "php": ">=5.6.4",
-                "symfony/process": "~3.1",
-                "symfony/psr-http-message-bridge": "^0.2.0",
+                "phpseclib/phpseclib": "^2.0",
+                "symfony/psr-http-message-bridge": "^0.3.0",
                 "zendframework/zend-diactoros": "~1.0"
             },
             "require-dev": {
@@ -709,7 +709,7 @@
                 "oauth",
                 "passport"
             ],
-            "time": "2016-08-23 12:49:27"
+            "time": "2016-09-09 14:47:12"
         },
         {
             "name": "lcobucci/jwt",
@@ -984,12 +984,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LibreEHR/core.git",
-                "reference": "4bfe79532227b4f47a6af0eb7f9770dfd6bc12eb"
+                "reference": "a19c478674e6fee8a651458c22afa561c33e61b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LibreEHR/core/zipball/4bfe79532227b4f47a6af0eb7f9770dfd6bc12eb",
-                "reference": "4bfe79532227b4f47a6af0eb7f9770dfd6bc12eb",
+                "url": "https://api.github.com/repos/LibreEHR/core/zipball/a19c478674e6fee8a651458c22afa561c33e61b0",
+                "reference": "a19c478674e6fee8a651458c22afa561c33e61b0",
                 "shasum": ""
             },
             "require": {
@@ -1038,7 +1038,7 @@
                 "source": "https://github.com/LibreEHR/core/tree/master",
                 "issues": "https://github.com/LibreEHR/core/issues"
             },
-            "time": "2016-09-07 11:57:57"
+            "time": "2016-09-19 01:06:00"
         },
         {
             "name": "libre-ehr/fhir",
@@ -1046,12 +1046,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/LibreEHR/fhir.git",
-                "reference": "d599263c19f5c633a2c0a86293fabf00f35151fa"
+                "reference": "0abf64f7fcd2a5b7444be2560e1b06652bb8e1c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/LibreEHR/fhir/zipball/d599263c19f5c633a2c0a86293fabf00f35151fa",
-                "reference": "d599263c19f5c633a2c0a86293fabf00f35151fa",
+                "url": "https://api.github.com/repos/LibreEHR/fhir/zipball/0abf64f7fcd2a5b7444be2560e1b06652bb8e1c1",
+                "reference": "0abf64f7fcd2a5b7444be2560e1b06652bb8e1c1",
                 "shasum": ""
             },
             "require": {
@@ -1103,7 +1103,7 @@
                 "source": "https://github.com/LibreEHR/fhir/tree/master",
                 "issues": "https://github.com/LibreEHR/fhir/issues"
             },
-            "time": "2016-09-06 14:51:10"
+            "time": "2016-09-19 01:51:49"
         },
         {
             "name": "monolog/monolog",
@@ -1276,16 +1276,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v2.1.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3"
+                "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
-                "reference": "47b254ea51f1d6d5dc04b9b299e88346bf2369e3",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/4dd659edadffdc2143e4753df655d866dbfeedf0",
+                "reference": "4dd659edadffdc2143e4753df655d866dbfeedf0",
                 "shasum": ""
             },
             "require": {
@@ -1323,7 +1323,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2016-04-19 13:41:41"
+            "time": "2016-09-16 12:04:44"
         },
         {
             "name": "paragonie/random_compat",
@@ -1372,6 +1372,98 @@
                 "random"
             ],
             "time": "2016-04-03 06:00:07"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "41f85e9c2582b3f6d1b7d20395fb40c687ad5370"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/41f85e9c2582b3f6d1b7d20395fb40c687ad5370",
+                "reference": "41f85e9c2582b3f6d1b7d20395fb40c687ad5370",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "sami/sami": "~2.0",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "phpseclib/bootstrap.php"
+                ],
+                "psr-4": {
+                    "phpseclib\\": "phpseclib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "time": "2016-08-18 18:49:14"
         },
         {
             "name": "psr/http-message",
@@ -2245,16 +2337,16 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v0.2",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "dc7e308e1dc2898a46776e2221a643cb08315453"
+                "reference": "7a5aa925c686fb8a6de909d0562fdb17502dcc76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/dc7e308e1dc2898a46776e2221a643cb08315453",
-                "reference": "dc7e308e1dc2898a46776e2221a643cb08315453",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/7a5aa925c686fb8a6de909d0562fdb17502dcc76",
+                "reference": "7a5aa925c686fb8a6de909d0562fdb17502dcc76",
                 "shasum": ""
             },
             "require": {
@@ -2266,6 +2358,7 @@
                 "symfony/phpunit-bridge": "~2.7|~3.0"
             },
             "suggest": {
+                "psr/http-message-implementation": "To use the HttpFoundation factory",
                 "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
             },
             "type": "symfony-bridge",
@@ -2295,7 +2388,7 @@
                 "http-message",
                 "psr-7"
             ],
-            "time": "2015-05-29 17:57:12"
+            "time": "2016-08-18 14:44:25"
         },
         {
             "name": "symfony/routing",
@@ -2815,16 +2908,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.5.2",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "da8529775f14f4fdae33f916eb0cf65f6afbddbc"
+                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/da8529775f14f4fdae33f916eb0cf65f6afbddbc",
-                "reference": "da8529775f14f4fdae33f916eb0cf65f6afbddbc",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
+                "reference": "ea74994a3dc7f8d2f65a06009348f2d63c81e61f",
                 "shasum": ""
             },
             "require": {
@@ -2853,7 +2946,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2016-09-06 16:07:05"
+            "time": "2016-09-16 13:37:59"
         },
         {
             "name": "phpdocumentor/reflection-common",
