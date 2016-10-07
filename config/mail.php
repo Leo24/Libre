@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'hello@example.com',
-        'name' => 'Example',
+        'address' => 'leo2410ua@gmail.com',
+        'name' => 'Leonid',
     ],
 
     /*
@@ -112,4 +112,9 @@ return [
 
     'sendmail' => '/usr/sbin/sendmail -bs',
 
+    'pretend'  => false,
+//    'mailgun' => [
+//        'domain' => 'sandboxa1078cc25445414c850b9bb5291c6924.mailgun.org',
+//        'secret' => 'key-18f8e215b6b43ce5751e39f8438c1595',
+//    ],
 ];

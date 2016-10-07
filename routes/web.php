@@ -17,3 +17,28 @@ Route::get('/', function () {
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+
+Route::get('sendemail', function () {
+
+    $data = array(
+        'name' => "Learning Laravel",
+    );
+
+    Mail::send('emails.welcome', $data, function ($message) {
+
+        $message->from('leo2410ua@gmail.com', 'Learning Laravel');
+
+        $message->to('leo2410@yandex.ru')->subject('Learning Laravel test email');
+//        $message->to('leo2410ua@gmail.com')->subject('Learning Laravel test email');
+//        $message->to('leo2410@i.ua')->subject('Learning Laravel test email');
+
+    });
+
+    return "Your email has been sent successfully";
+
+});
