@@ -19,7 +19,8 @@
         "laravel/framework": "5.3.*",
         "laravel/passport": "^1.0",
         "libre-ehr/fhir": "dev-master",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "stripe/stripe-php": "3.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
