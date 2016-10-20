@@ -14,6 +14,9 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //
+        $this->publishes([
+            __DIR__.'/vendor/libre-ehr/fhir/config/FHIRConfig.php' => config_path('FHIRConfig.php'),
+        ]);
     }
 
     /**
